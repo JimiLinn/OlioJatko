@@ -11,4 +11,11 @@ MainWindow::MainWindow(QWidget *parent) :
 MainWindow::~MainWindow()
 {
     delete ui;
+    ui=nullptr;
+}
+
+void MainWindow::on_btnSayHello_clicked()
+{
+    QString name=ui->lineEditName->text();
+    ui->labelResult->setText("Terve " +name);
 }
