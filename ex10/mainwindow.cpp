@@ -1,5 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "student.h"
+#include <QString>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -15,8 +17,8 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_btnShow_clicked()
 {
-    QList<Student*> studentList;
-    Student student_1, student_2,student_3;
+    QList<student*> studentList;
+    student student_1, student_2,student_3;
     studentList.append(&student_1);
     studentList.append(&student_2);
     studentList.append(&student_3);
